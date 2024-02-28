@@ -32,3 +32,13 @@ if (rowData) {
 }
 
 // якщо всі поля заповнені: очищення сховища і форми при натисканні кнопки + виведення даних в консоль
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  if (form.email.value.trim() !== '' && form.message.value.trim() !== '') {
+    console.log(readFormData());
+    localStorage.removeItem(storageKey);
+    form.reset();
+  } else {
+    return;
+  }
+});
