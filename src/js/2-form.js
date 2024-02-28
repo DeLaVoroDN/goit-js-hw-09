@@ -33,19 +33,12 @@ if (rowData) {
 
 // якщо всі поля заповнені: очищення сховища і форми при натисканні кнопки + виведення даних в консоль
 form.addEventListener('submit', event => {
-  event.preventDefault(); // скидаємо значення за замовчуванням
-  const email = event.target.elements.email.value;
-  const message = event.target.elements.message.value;
-
-  if (email === '' || message === '') {
-    //якщо хоч одне поле не заповнене виводимо повідомлення про необхідність заповнення всіх полів
-    return alert('All form fields must be filled in');
+  event.preventDefault();
+  if (form.email.value.trim() !== '' && form.message.value.trim() !== '') {
+    console.log(readFormData());
+    localStorage.removeItem(storageKey);
+    form.reset();
+  } else {
+    return;
   }
-  if (getLocalStorageData() !== null) {
-    //перевірка якщо є дані, то виводимо в консоль
-    console.log(getLocalStorageData());
-  }
-
-  localStorage.removeItem(STORAGE_KEY); //очищаємо локальне сховище
-  form.reset(); // очищаємо дані форми
 });
