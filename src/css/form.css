@@ -1,53 +1,57 @@
 body {
-  background-color: lavender;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
-  font-family: Arial, sans-serif;
+  background-color: lavender; /* Фоновый цвет страницы */
+  font-weight: 400; /* Начертание шрифта */
+  font-size: 16px; /* Размер шрифта */
+  line-height: 1.5; /* Межстрочный интервал */
+  letter-spacing: 0.04em; /* Межбуквенный интервал */
+  color: #2e2f42; /* Цвет текста */
+  font-family: Arial, sans-serif; /* Семейство шрифтов */
 }
+
 label {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  display: flex; /* Отображение в виде флекс-контейнера */
+  flex-direction: column; /* Направление основной оси */
+  gap: 8px; /* Расстояние между дочерними элементами */
 }
 
 input {
-  margin-bottom: 16px;
-  width: 360px;
-  height: 40px;
-  padding-left: 10px;
-  font-family: inherit;
+  margin-bottom: 16px; /* Внешний отступ снизу */
+  width: 360px; /* Ширина поля ввода */
+  height: 40px; /* Высота поля ввода */
+  padding-left: 10px; /* Внутренний отступ слева */
+  font-family: inherit; /* Наследование шрифта */
 }
 
 textarea {
-  width: 360px;
-  height: 112px;
-  margin-bottom: 16px;
-  padding-left: 10px;
-  padding-top: 10px;
-  font-family: inherit;
+  width: 360px; /* Ширина текстового поля */
+  height: 112px; /* Высота текстового поля */
+  margin-bottom: 16px; /* Внешний отступ снизу */
+  padding-left: 10px; /* Внутренний отступ слева */
+  padding-top: 10px; /* Внутренний отступ сверху */
+  font-family: inherit; /* Наследование шрифта */
 }
+
 form {
-  margin-top: 24px;
-  border-radius: 8px;
-  padding: 24px;
-  width: 408px;
-  height: 312px;
-  border: none;
-  background-color: #ffffff;
+  margin-top: 24px; /* Внешний отступ сверху */
+  border-radius: 8px; /* Радиус скругления углов */
+  padding: 24px; /* Внутренний отступ */
+  width: 408px; /* Ширина формы */
+  height: 312px; /* Высота формы */
+  border: none; /* Отсутствие границы */
+  background-color: #ffffff; /* Фоновый цвет формы */
 }
+
 button {
-  border-radius: 8px;
-  padding: 8px 16px;
-  width: 95px;
-  height: 40px;
-  background: #4e75ff;
-  color: #ffffff;
-  font-weight: 500;
-  border: none;
+  border-radius: 8px; /* Радиус скругления углов */
+  padding: 8px 16px; /* Внутренний отступ */
+  width: 95px; /* Ширина кнопки */
+  height: 40px; /* Высота кнопки */
+  background: #4e75ff; /* Фоновый цвет кнопки */
+  color: #ffffff; /* Цвет текста кнопки */
+  font-weight: 500; /* Начертание шрифта */
+  border: none; /* Отсутствие границы */
 }
+
 button:hover {
-  background: #6c8cff;
+  background: #6c8cff; /* Фоновый цвет кнопки при наведении */
 }

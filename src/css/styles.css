@@ -1,8 +1,12 @@
-@import url('./reset.css');
-@import url('./gallery.css');
-@import url('./form.css');
-@import 'simplelightbox/dist/simple-lightbox.min.css';
+@import url('./reset.css'); /* Импорт сброса стилей */
+
+@import url('./gallery.css'); /* Импорт стилей галереи */
+
+@import url('./form.css'); /* Импорт стилей формы */
+
+@import 'simplelightbox/dist/simple-lightbox.min.css'; /* Импорт стилей для модального окна */
+
 .link-title {
-  font-size: 24px;
-  color: blueviolet;
+  font-size: 24px; /* Размер шрифта */
+  color: blueviolet; /* Цвет текста */
 }

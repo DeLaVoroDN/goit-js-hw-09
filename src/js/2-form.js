@@ -1,7 +1,7 @@
 const storageKey = 'feedback-form-state';
 const form = document.querySelector('.feedback-form');
 
-// функція для читання даних, введених в таблиці
+// Функция для чтения данных, введенных в форму
 function readFormData() {
   const email = form.email.value.trim();
   const message = form.message.value.trim();
@@ -11,7 +11,7 @@ function readFormData() {
   };
 }
 
-// збереження даних в локальне сховище
+// Сохранение данных в локальное хранилище при вводе данных в форму
 form.addEventListener('input', event => {
   const data = readFormData();
   event.preventDefault();
@@ -19,7 +19,7 @@ form.addEventListener('input', event => {
   localStorage.setItem(storageKey, jsonData);
 });
 
-// при наявності даних в локальному сховищі виведення даних одразу в форму
+// При наличии данных в локальном хранилище выводим их в форму сразу
 const rowData = localStorage.getItem(storageKey);
 if (rowData) {
   const isData = JSON.parse(rowData);
@@ -31,7 +31,7 @@ if (rowData) {
   }
 }
 
-// якщо всі поля заповнені: очищення сховища і форми при натисканні кнопки + виведення даних в консоль
+// Если все поля заполнены: очищаем хранилище и форму при отправке формы + выводим данные в консоль
 form.addEventListener('submit', event => {
   event.preventDefault();
   if (form.email.value.trim() !== '' && form.message.value.trim() !== '') {

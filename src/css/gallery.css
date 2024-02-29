@@ -1,14 +1,14 @@
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 1128px;
-  gap: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex; /* Отображение в виде флекс-контейнера */
+  flex-wrap: wrap; /* Разрешение переноса элементов на новую строку */
+  flex-direction: row; /* Направление основной оси */
+  width: 1128px; /* Ширина галереи */
+  gap: 20px; /* Расстояние между элементами */
+  margin-left: auto; /* Автоматический отступ слева */
+  margin-right: auto; /* Автоматический отступ справа */
 }
 
 .gallery-image {
-  width: 340px;
-  height: 200px;
+  width: 340px; /* Ширина изображения в галерее */
+  height: 200px; /* Высота изображения в галерее */
 }
